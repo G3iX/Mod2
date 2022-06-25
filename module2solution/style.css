@@ -33,6 +33,7 @@ section {background-color: darkgray;border: 1px solid black;
 	box-sizing: border-box;
 	margin: 3%;
 	padding-left: 20px;
+	padding-right: 3px;
 	padding-bottom: 20px;
 	font-size: 140%;
 }
