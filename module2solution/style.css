@@ -1,0 +1,59 @@
+h1 {width: 100%;text-align: center;}
+p{
+	width: 25%;
+	font-size: 24px;
+	font-weight: bold;
+	height: 15%;
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: 6px 15px 2px 15px; /* up right down left */
+    border: 1px solid black;
+    text-align: center;
+    float: right;
+    margin-left: 100%;
+}
+.tab {
+	margin-right: 9%;
+}
+.chic {
+	background-color: pink; 
+}
+.beef {
+	background-color: 	#A50021;
+}
+.such {
+	background-color: #F8DE7E;
+}
+
+section {background-color: darkgray;border: 1px solid black;
+	font-family: cursive;	
+	position: relative; 
+
+	/*clear: left; mobile*/
+	box-sizing: border-box;
+	margin: 3%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 140%;
+}
+/* desktop */
+@media (min-width: 992px) {
+.box1{width: 27%;}
+.box2{width: 27%;/*margin-right: auto; margin-left: auto;*/}
+.box3{width: 27%;}
+section {float: left;}
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+.box1{width: 42%;}
+.box2{width: 42%;/*margin-right: auto; margin-left: auto;*/}
+.box3{width: 90%;}
+section {float: left;}
+}
+/* smartphone */
+@media (max-width: 767px) {
+.box1{width: 90%;}
+.box2{width: 90%;/*margin-right: auto; margin-left: auto;*/}
+.box3{width: 90%;}
+section {clear: left;}
+}
