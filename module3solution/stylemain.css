@@ -1,4 +1,3 @@
-
 a.nav-link {
 	text-align: center;  text-decoration: none; color: black; /*border: 1px solid darkgray;*/
 	box-sizing: border-box;}
@@ -7,7 +6,7 @@ a.nav-link {
 	font-weight: 600;
 	padding-left: 15px;
 }
-.navbar {background-color: #e3f2fd;} 
+.navbar {background-color: #e3f2fd; border-bottom: 1px solid darkgray;} 
 #logo {text-decoration: underline overline orangered;}
 .chic {
 	background-color: pink; 
@@ -18,7 +17,7 @@ a.nav-link {
 .such {
 	background-color: #F8DE7E;
 }
-p{
+h3 {
 	width: 42%;
 	font-size: 24px;
 	font-weight: bold;
@@ -45,5 +44,19 @@ section {background-color: darkgray;border: 1px solid black;
 	height: 96%;
 }
 section {clear: left;}
-p { width: 45%; padding: 3px;}
+h3 { width: 45%; padding: 3px;}
+
+a#link-back-to-top {
+ color: orangered !important;
+ margin-left: 90%;
+ margin-bottom: 2%;
+ width: 100%;
+ text-decoration: none;
 }
+a#link-back-to-top:hover, a#link-back-to-top:active {
+    color: #ffb300ed !important;
+    transition: color 0.3s !important;
+  }
+/*main {
+	background-color: rgba(210, 205, 193, 1.0);
+	color: rgba(28, 70, 149, 1.0);*/
