@@ -10,9 +10,9 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="index.html">Food, LLC</a>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top "> <!--bg-light-->
+		  <div class="container-fluid ">
+		    <a class="navbar-brand" href="index.html" id="logo">Food, LLC</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
@@ -35,20 +35,22 @@
 <main>
 	<h6>&nbsp;</h6>
 	<h6>&nbsp;</h6>
-	<h1 class="heading">Our&nbsp;Menu</h1>
+	<h1 class="text-center">Our&nbsp;Menu</h1>
 <div class="container">
-  	<div class="row">
-		<div class="col-sm-12 col-md-6 col-lg-4">
-	     <section class="box1" id="coco"><a href="#" class="nav-link"><p class="chic">Chicken</p></a><div id="menu-title" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat.</div></section>
+  	<div class="row"> <!-- section which using the Bootstrap Grid -->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="coco">
+	     <section class="box1" ><a href="#" class="nav-link"><p class="chic">Chicken</p></a><div id="menu-title" class="container-fluid">Chicken Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></section>
  		</div>
-    	<div class="col-sm-12 col-md-6 col-lg-4">
-	      <section class="box2" id="moo"><a href="#" class="nav-link"><p class="beef">Beef</p></a><div id="menu-title" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat.</div></section>
+    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="moo">
+	      <section class="box2" ><a href="#" class="nav-link"><p class="beef">Beef</p></a><div id="menu-title" class="container-fluid">Beef Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></section>
 	  	</div>
-	    <div class="col-sm-12 col-md-12 col-lg-4">
-	      <section class="box3" id="bloop"><a href="#" class="nav-link"><p class="such">Sushi</p></a><div id="menu-title" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat.</div></section>
+	    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" id="bloop">
+	      <section class="box3" ><a href="#" class="nav-link"><p class="such">Sushi</p></a><div id="menu-title" class="container-fluid">Sushi Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></section>
 	    </div>
   	</div>
 </div>
+<h6>&nbsp;</h6>
+<h6>&nbsp;</h6>
 </main>
 <!--<div class="col-lg-4 col-sm-6 col-xs-12">
 	<div class="col-lg-4 col-sm-6 col-xs-12">
@@ -60,5 +62,11 @@
 	<section class="box2" id="moo"><p class="beef">Beef</p><div id="menu-title" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat.</div></section>
 	<section class="box3" id="bloop"><p class="such">Sushi</p><div id="menu-title" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex&nbsp;ea commodo consequat.</div></section>-->
 </main>
+<script type="text/javascript">
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarCollapse')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {l.addEventListener('click', () => { bsCollapse.toggle() })})
+</script>
 </body>
 </html>
