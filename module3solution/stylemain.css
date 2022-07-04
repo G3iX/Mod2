@@ -63,7 +63,7 @@ main {
 	background-color: rgba(210, 205, 193, 1.0);
 	/*color: rgba(28, 70, 149, 1.0);*/
 }
-button.navbar-toggler:active {
+/*button.navbar-toggler:active {
 	background-color: #ffb300ed;
 	transition: background-color 0.3s !important;
-}
+}*/
