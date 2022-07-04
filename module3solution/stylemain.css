@@ -1,6 +1,5 @@
 a.nav-link {
 	text-align: center;  text-decoration: none; color: black; font-weight: 500;/*border: 1px solid darkgray; */}
-* {box-sizing: border-box;}
 .navbar-brand {
 	font-weight: 600;
 	padding-left: 15px;
@@ -45,7 +44,7 @@ section {background-color: darkgray;border: 1px solid black;
 section {clear: left;}
 h3 { width: 45%; padding: 3px;}
 
-a#link-back-to-top {
+a#link-back-to-top1 , a#link-back-to-top2 , a#link-back-to-top3 {
  color: orangered !important;
  margin-left: 90%;
  margin-bottom: 2%;
@@ -54,7 +53,8 @@ a#link-back-to-top {
  width: 100%;
  text-decoration: none;
 }
-a#link-back-to-top:hover , a#link-back-to-top:active {
+a#link-back-to-top1:hover , a#link-back-to-top1:active , a#link-back-to-top2:hover , a#link-back-to-top2:active ,
+a#link-back-to-top3:hover , a#link-back-to-top3:active {
     color: #ffb300ed !important;
     transition: color 0.3s !important;
   }
