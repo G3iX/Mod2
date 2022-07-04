@@ -32,7 +32,7 @@ h3 {
 }
 section {background-color: darkgray;border: 1px solid black;
 	/*font-family: cursive;*/	
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+	font-family: Arial, Helvetica, sans-serif; 
 	position: relative; 
 	/*clear: left; mobile*/
 	box-sizing: border-box;
