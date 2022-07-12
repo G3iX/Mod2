@@ -34,10 +34,10 @@ function mult(x,y){
 	return x*y;
 	/*why are u here? why are u gei*/
 }
-console.log(mult(5,3));
-mult.version = "helloNnigers"
-console.log(mult.version);
-console.log(mult.toString());
+//console.log(mult(5,3));
+//mult.version = "helloNnigers"
+//console.log(mult.version);
+//console.log(mult.toString());
 
 function makeMultiplier(multiplier) {
   var myFunFunc = function (x) {
@@ -47,5 +47,87 @@ function makeMultiplier(multiplier) {
   return myFunFunc;
 }
 
-var operation = makeMultiplier(10);
-console.log(operation(10));
+//var operation = makeMultiplier(10);
+//console.log(operation(10));
+
+
+/* lecture 49`var literalCircle = {
+	radius: 10,
+
+	getArea: funcion() {
+		console.log(this) // refering to our local class (rad: 10)
+		return Math.PI * Math.pow(this.radius, 2)
+	}
+}`*/
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.bark = function () {
+  console.log(this.name + " likes barking! Bark!");
+}
+
+//var max = new Dog("Max", "Buddy");
+//max.bark();
+
+
+
+//var names = [
+//{name: "suus"}, {name: "oid"}]
+
+var names = ['as','ass','assumption'];
+/*for (var i = 0; i < names.length; i++) {
+	 console.log("hi, " + names[i])
+}
+var counter = 0;
+var myArray = ["assumption", 2, {handle: "ass"}];
+for (var i = 0; i < myArray.length; i++) {
+  counter++;
+}
+console.log(counter);
+
+function makeMultiplier (multiplier) {
+	return (function(x){
+		return multiplier * x;
+	});
+}
+var dobleAll = makeMultiplier(2);
+console.log(dobleAll(30));
+
+
+function makeMultiplier2 (multiplier) {
+	function b() {
+		console.log("Multipler is: " + multiplier);
+	}
+	b();
+	return (function(x){ // java script closure
+		return multiplier * x;
+	});
+}
+var dobleAll = makeMultiplier(2);
+console.log(dobleAll(30));
+*/
+//JS Namespace example 
+(function(window) {
+ var obj = {};
+ obj.dreamOn = function () {
+ console.log("I want to see the global scope! Let me out!");
+ };
+window.doer = obj;
+ })(window);
+doer.dreamOn();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
