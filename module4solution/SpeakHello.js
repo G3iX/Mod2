@@ -2,7 +2,7 @@
 // See Lecture 52, part 2
 
 
-// STEP 3: Create an object, called 'helloSpeaker' to which you will attach
+// STEP 3: DONE Create an object, called 'helloSpeaker' to which you will attach
 // the "speak" method and which you will expose to the global context
 // See Lecture 52, part 1
 // var helloSpeaker =
@@ -11,7 +11,7 @@
 var speakWord = "Hello";
 (function (window) {
   var helloSpeaker = {}; //greater
-  helloSpeaker.name = "Lilb"; //
+  //helloSpeaker.name = "Lilb"; //
   // var greeting
   helloSpeaker.sayHello = function (name) {
     console.log(speakWord + " " + helloSpeaker.name);
@@ -21,16 +21,16 @@ var speakWord = "Hello";
 
 })(window);
 
-helloSpeaker.sayHello();
+//helloSpeaker.sayHello();
 
-// STEP 4: Rewrite the 'speak' function such that it is attached to the
+// STEP 4: DONE Rewrite the 'speak' function such that it is attached to the
 // helloSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
 /*function speak(name) {
   console.log(speakWord + " " + name);
 }*/
 
-// STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
+// STEP 5: DONE Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
 // See Lecture 52, part 2
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
@@ -52,14 +52,28 @@ helloSpeaker.sayHello();
 // var byeSpeaker =
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
-var speakWord = "Good Bye";
+var speakanotherWord = "Good Bye";
 
 // STEP 8: Rewrite the 'speak' function such that it is attached to the
 // byeSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
-function speak(name) {
-  console.log(speakWord + " " + name);
-}
+//function speak(name) {
+//  console.log(speakWord + " " + name);
+//}
+// -------------------------------
+(function (window) {
+  var byeSpeaker = {}; //greater
+  //byeSpeaker.name = "Milb"; //
+  // var greeting
+  byeSpeaker.sayHello = function (name) {
+    console.log(speakanotherWord + " " + byeSpeaker.name);
+  }
+
+  window.byeSpeaker = byeSpeaker;
+
+})(window);
+
+//byeSpeaker.sayHello();
 
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
@@ -97,7 +111,7 @@ assignment.
 WARNING!!! WARNING!!!
 */
 
-// STEP 1:
+// STEP 1 Done:
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
@@ -108,8 +122,19 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
-for (/* fill in parts of the 'for' loop to loop over names array */) {
+//for (/* fill in parts of the 'for' loop to loop over names array */) {
+(function () {for (var i = 0; i < names.length; i++) {
+  if (names[i].charAt(0).toLowerCase() == 'j') {
+   //console.log("hi, " + names[i])
+    byeSpeaker.name = names[i];
+    byeSpeaker.sayHello();
+ }else{
 
+    helloSpeaker.name = names[i];
+    helloSpeaker.sayHello();
+ }
+}
+})();
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
   // Use the string object's 'charAt' function. Since we are looking for
@@ -124,9 +149,9 @@ for (/* fill in parts of the 'for' loop to loop over names array */) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (/* fill in condition here */) {
+//  if (/* fill in condition here */) {
     // byeSpeaker.xxxx
-  } else {
+//  } else {
     // helloSpeaker.xxxx
-  }
-}
+//  }
+//}
