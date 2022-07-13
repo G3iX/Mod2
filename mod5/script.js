@@ -16,10 +16,7 @@ function sayHello () {
     .innerHTML = message;
 
   if (name === "student") {
-    var title = 
-      document
-        .querySelector("#title")
-        .textContent;
+    var title = document.querySelector("#title").textContent;
     title += " & Lovin' it!";
     document
         .querySelector("h1")
