@@ -116,14 +116,15 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
          chosenCategoryShortName = "'" + chosenCategoryShortName + "'"
-         var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "randomCategoryShortName", chosenCategoryShortName)
+         var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, 'randomCategoryShortName', chosenCategoryShortName)
       //  $dc.loadMenuItems("'" + homeHtmlToInsertIntoMainPage + "'")
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      insertHtml(homeHtmlToInsertIntoMainPage)
+      // var insertHtml = function (selector, html) {
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage) // inserting in <div> with id="main-content"
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
