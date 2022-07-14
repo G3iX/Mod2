@@ -125,6 +125,7 @@ function buildAndShowHomeHTML (categories) {
       // ....
       // var insertHtml = function (selector, html) {
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage) // inserting in <div> with id="main-content"
+      // lec. 61
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
